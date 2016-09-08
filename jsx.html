@@ -1,0 +1,22 @@
+<!--JSX语法糖，在js中写html代码，简化书写方式-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+<script src="react-15.3.1/build/react.js"></script>
+<script src="react-15.3.1/build/react-dom.js"></script>
+<script src="react-15.3.1/browser.js"></script>
+<script type="text/babel">
+    ReactDOM.render(
+            <div>
+                <h1>Hello</h1><span> world!</span>
+            </div>,
+            document.getElementById('container')
+    );
+</script>
+</html>
