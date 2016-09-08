@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="react-15.3.1/build/react.js"></script>
+    <script src="react-15.3.1/build/react-dom.js"></script>
+    <style>
+        .red{
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+<script>
+    ReactDOM.render(
+            React.createElement('h1', {name:'haha', className:'red'}, 'Hello',
+                React.createElement('span', {name:'heihei'}, ' world!')
+            ),
+            document.getElementById('container')
+    );
+</script>
+</html>
